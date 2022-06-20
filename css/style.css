@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --heading: rgb(0 10 45);
+    --para-color: #777777;
+    --para-tint: #e4e4e4;
+    --white: #fff;
+    --black:#212529;
+    --helper-color: #8490ff;
+    --icons-bg: rgba(144,172,209,0.2);
+    --helper-tint: #f3f4ff;
+    --bg: rgb(249 249 255);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --shadow-color: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadowbtn:0px 20px 20px 0px rgb(132 144 255 / 30%)
+  }
+
+html{
+  font-size: 62.5%;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--heading);
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.7rem;
+    color: var(--para-color);
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/* common style */
+.section{
+    padding: 9rem 0;
+}
+
+.grid{
+    display: grid;
+    gap: 9rem;
+}
+.grid-two-col{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-three-col{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-four-col{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.btn{
+    background: var(--gradient);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+    /* for browser support */
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+}
+.btn:hover,.btn:active{
+    box-shadow: var(--shadowbtn);
+}
+
+.common-heading{
+    font-size: 4.8rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+}
+
+.common-heading::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--helper-color);
+}
+.common-heading::after{
+    content: "";
+    position: absolute;
+    top: 118%;
+    left: 0;
+    min-width: 30%;
+    height: 0.3rem;
+    background: var(--helper-color);
+}
+
+
+
+/* Style Header part */
+
+.header{
+    padding: 0 4.8rem;
+    height: 8rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.nav-list{
+    display: flex;
+    gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--para-color);
+    font-family: 'Poppins', sans-serif;
+    transition: color .3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper-color);
+}
+
+
+/* Style Hero part */
+.hero-section{
+    background-color: var(--bg);
+}
+
+.hero-section-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-hero{
+    max-width: 80%;
+    /* height: 6/0%; */
+}
+
+.hero-para{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--helper-color);
+}
+.hero-heading{
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.para{
+    margin-top: 1.5rem;
+    margin-bottom: 4.8rem;
+    max-width: 60rem;
+}
+
+/* style bio-data section */
+.biodata-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.biodata-img img{
+  width: 80%;
+  box-shadow: 2rem 2rem 0 0 var(--helper-color);
+  display: inline-block;
+}
+.bio-data-stats{
+    display: flex;
+    padding: 6.4rem 0;
+    flex-direction: column;
+    gap: 3rem;
+}
+.bio-stats h3{
+    margin-bottom: 1rem;
+}
+.bio-progress-bar{
+    width: 90%;
+    height: 0.8rem;
+    background: var(--para-tint);
+    position: relative;
+    border-radius: 1.6rem;
+    box-shadow: var(--shadow-color);
+}
+.bio-progress-bar::before{
+    content: "";
+    width: 80%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient);
+    border-radius: 10rem;
+}
+
+.bio-progress-2::before{
+    width: 90%;
+}
+.bio-progress-3::before{
+    width: 85%;
+}
+.bio-progress-4::before{
+    width: 80%;
+}
+.bio-progress-5::before{
+    width: 85%;
+}
+
+.bio-progress-bar span{
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    top: 1.8rem;
+    background: var(--helper-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: 0;
+}
+
+.bio-progress-bar span{
+    left: 76%;
+}
+
+
+.bio-progress-2 span{
+    left: 86%;
+}
+
+.bio-progress-3 span{
+    left: 81%;
+}
+
+
+.bio-progress-4 span{
+    left: 76%;
+}
+
+
+.bio-progress-5 span{
+    left: 81%;
+}
+
+/* create carets */
+.bio-progress-bar span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.8rem solid var(--helper-color);
+    border-color: transparent;
+    border-bottom-color: var(--helper-color); 
+    top: -1.6rem; 
+}
+
+/* style portfolio section */
+.portfolio-section{
+    background: var(--bg);
+    transition: all .7s linear;
+}
+
+.portfolio-section p{
+    max-width: 60rem;
+}
+.folio-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 6rem;
+    margin: 6rem 0;
+}
+.portfolio-imgs{
+ gap: 3.2rem;
+}
+
+.portfolio-imgs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.img-overlay .overlay-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all .7s linear;
+    border-radius: 5px;
+}
+.img-overlay:hover>.overlay-link{
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.img-overlay .common-heading{
+    margin: 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.folio-btn:hover{
+    transform: translateY(-1rem);
+}
+
+.folio-btn-active{
+    transform: translateY(-1rem);
+}
+
+.p-img-not-active{
+    display: none;
+}
+
+/* style counter section */
+.section-counter{
+    background-color: var(--gradient);
+    text-align: center;
+    transition: all .7s linear;
+    color: var(--white);
+}
+.counter-numbers{
+    font-size: 4.8rem;
+}
+.section-counter{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+
+/* style our services section */
+.service-section{
+    transition: all 0.7s linear;
+
+}
+
+.service-section p{
+    max-width: 60rem;
+}
+
+.service-section .grid{
+    margin-top: 10rem;
+    row-gap: 10rem;
+}
+
+.service-box{
+    text-align: center;
+    box-shadow: var(--shadow-color);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+}
+
+.service-box:hover,
+.service-box:active{
+transform: translateY(-3rem);
+cursor: pointer;
+}
+
+.service-icon{
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--icons-bg);
+    display: inline-block;
+    border-radius: 58% 42% 70% 30% / 46% 30% 70% 54% ;
+    padding: 1.8rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: wave 3s linear infinite;
+
+}
+
+.service-icon::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    background: transparent;
+    border: 1px solid var(--black);
+    animation: wave 3s linear infinite;
+
+}
+
+@keyframes wave {
+    0%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+    50%{
+        border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+    }
+    100%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 48% 70%;
+    }
+    
+}
+
+.service-box h3{
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
