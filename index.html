@@ -1,227 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="index.js"></script>
-</head>
-<body>
-    <!-- header section -->
-    <header class="header">
-        <img src="images/logo.jpg" alt="main logo" class="logo">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <header class="header">
+        <img src="images/logo.jpg" alt="main logo" class="logo" />
 
         <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#" class="navbar-link home-link">Home</a></li>
-                <li><a href="#" class="navbar-link about-link">About</a></li>
-                <li><a href="#" class="navbar-link service-link">Service</a></li>
-                <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
-                <li><a href="#" class="navbar-link contact-link">Contact</a></li>
-            </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="navbar-link home-link">Home</a></li>
+            <li>
+              <a href="#about-section" class="navbar-link about-link">About</a>
+            </li>
+            <li>
+              <a href="#project-section" class="navbar-link service-link"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact-section" class="navbar-link contact-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </nav>
-
-    </header>
-    <!-- hero section -->
-    <main>
+      </header>
+      <!-- hero section -->
+      <main>
         <section class="hero-section section">
-            <div class="container grid grid-two-col">
-               
-                <div class="hero-section-data">
-                    <p class="hero-para">Hi! This is..</p>
-                    <h1 class="hero-heading">showman das</h1>
-                    <p class="para">I am Showman das.A Full stack developer.</p>
-                    <div>
-                        <a href="#"class="btn hire-btn">Hire me</a>
-                    </div>
-                </div><!--/hero-section-data-->
-                <div class="hero-img">
-                    <img src="images/mypic.jpg" alt="my picture" class="img-hero">
-                </div><!--/hero-img-->
-            </div><!--/grid-two-col-->
+          <div class="container grid grid-two-col">
+            <div class="hero-section-data">
+              <p class="hero-para">Hi! This is..</p>
+              <h1 class="hero-heading">showman das</h1>
+              <p class="para">I am Showman das.A Front End developer.</p>
+              <div class="bio-btn">
+                <a
+                  href="./MyResume.pdf"
+                  class="btn"
+                  id="resume"
+                  download="
+                        "
+                  >Download Resume</a
+                >
+              </div>
+              <!--/bio-btn-->
+            </div>
+            <!--/hero-section-data-->
+            <div class="hero-img">
+              <img src="images/mypic.jpg" alt="my picture" class="img-hero" />
+            </div>
+            <!--/hero-img-->
+          </div>
+          <!--/grid-two-col-->
         </section>
-    </main>
-    <!-- bio-data section  -->
-    <section class="bio-section">
+      </main>
+      <!-- bio-data section  -->
+      <section class="bio-section" id="about-section">
         <div class="container grid grid-two-col">
-            <div class="biodata-img">
+          <!-- <div class="biodata-img">
                 <img src="images/biodata.jpg" alt="biodata image">
-            </div><!--/biodata-img-->
-            <div class="bio-data">
-                <h2 class="common-heading">my bio-data</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    A eaque voluptates recusandae iure fugiat autem dolore, 
-                    doloremque delectus sapiente debitis.</p>
-                <br/>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, assumenda.</p>
-                <div class="bio-data-stats">
-                    <div class="bio-stats">
-                        <h3>Design</h3>
-                        <div class="bio-progress-bar">
-                            <span>80%</span>
-                        </div><!--/bio-progress-bar-->
-                    </div><!--/bio-stats-->
-                    <div class="bio-stats">
-                        <h3>HTML</h3>
-                        <div class="bio-progress-bar bio-progress-2">
-                            <span>90%</span>
-                        </div><!--/bio-progress-bar-->
-                    </div><!--/bio-stats-->
-                    <div class="bio-stats">
-                        <h3>CSS</h3>
-                        <div class="bio-progress-bar bio-progress-3">
-                            <span>85%</span>
-                        </div><!--/bio-progress-bar-->
-                    </div><!--/bio-stats-->
-                    <div class="bio-stats">
-                        <h3>JAVASCRIPT</h3>
-                        <div class="bio-progress-bar bio-progress-4">
-                            <span>80%</span>
-                        </div><!--/bio-progress-bar-->
-                    </div><!--/bio-stats-->
-                    <div class="bio-stats">
-                        <h3>BOOTSTRAP</h3>
-                        <div class="bio-progress-bar bio-progress-5">
-                            <span>85%</span>
-                        </div><!--/bio-progress-bar-->
-                    </div><!--/bio-stats-->
-                   
-                </div><!--/bio-data-stats-->
-                <div class="bio-btn">
-                    <a href="#" class="btn">Download CV</a>
-                </div><!--/bio-btn-->
-            </div><!--/bio-data-->
+            </div>/biodata-img -->
+          <div class="bio-data">
+            <h2 class="common-heading">About Me</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eaque
+              voluptates recusandae iure fugiat autem dolore, doloremque
+              delectus sapiente debitis.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam, assumenda.
+            </p>
+          </div>
+          <!--/bio-data-->
+          <div class="bio-data-stats" id="skill-section">
+            <h2 class="common-heading">My Skills</h2>
+            <div class="bio-stats">
+              <h3>Design</h3>
+              <div class="bio-progress-bar">
+                <span>80%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+            <div class="bio-stats">
+              <h3>HTML</h3>
+              <div class="bio-progress-bar bio-progress-2">
+                <span>90%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+            <div class="bio-stats">
+              <h3>CSS</h3>
+              <div class="bio-progress-bar bio-progress-3">
+                <span>85%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+            <div class="bio-stats">
+              <h3>JAVASCRIPT</h3>
+              <div class="bio-progress-bar bio-progress-4">
+                <span>80%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+            <div class="bio-stats">
+              <h3>BOOTSTRAP</h3>
+              <div class="bio-progress-bar bio-progress-5">
+                <span>85%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
 
-        </div><!--/grid-two-col-->
-    </section>
-    <!--portfolio section-->
-    <section class="section portfolio-section" id="section-portfolio">
+            <div class="bio-stats">
+              <h3>REACT</h3>
+              <div class="bio-progress-bar bio-progress-5">
+                <span>70%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+
+            <div class="bio-stats">
+              <h3>MONGO DB</h3>
+              <div class="bio-progress-bar bio-progress-5">
+                <span>60%</span>
+              </div>
+              <!--/bio-progress-bar-->
+            </div>
+            <!--/bio-stats-->
+
+           
+          </div>
+        </div>
+        <!--/grid-two-col-->
+      </section>
+      <!-- skill section  -->
+
+      <section class="section portfolio-section" id="project-section">
         <div class="container">
-            <h2 class="common-heading">Latest Works</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus perferendis 
-                dolore itaque soluta quis ipsa consectetur qui?</p>
-        </div><!--/container-->
-        <div class="folio-btns">
-            <div class="btn folio-btn" data-btn-num="1">Website</div>
-            <div class="btn folio-btn" data-btn-num="2">Youtube</div>
-            <div class="btn folio-btn" data-btn-num="3">Design</div>
-        </div><!--/folio-btn-->
+          <h2 class="common-heading">My Projects</h2>
+        </div>
+        <!--/container-->
+
         <div class="container grid grid-three-col portfolio-imgs">
-            <div class="img-overlay p-btn--1">
-                <img src="images/portfolio-images/1.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 1</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
-            <div class="img-overlay p-btn--3">
-                <img src="images/portfolio-images/7.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 2</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
-            <div class="img-overlay p-btn--1">
-                <img src="images/portfolio-images/3.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 3</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
-            <div class="img-overlay p-btn--1 p-btn--2">
-                <img src="images/portfolio-images/4.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 4</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
-            <div class="img-overlay p-btn--2">
-                <img src="images/portfolio-images/5.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 5</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
-            <div class="img-overlay p-btn--1">
-                <img src="images/portfolio-images/8.jpg" alt="my works">
-                <div class="overlay-link">
-                    <a href="#" class="common-heading" target="_blank">Project 6</a>
-                </div><!--/overlay-txt-->
-            </div><!--/img-overlay-->
+          <div class="img-overlay p-btn--1">
+            <img src="images/portfolio-images/1.jpg" alt="my works" />
+            <div class="overlay-link">
+              <a
+                href="projectOne.html"
+                title="Click To Explore Project"
+                class="common-heading"
+                target="_blank"
+                >Project 1</a
+              >
+            </div>
+            <!--/overlay-txt-->
+          </div>
+          <!--/img-overlay-->
 
+          <div class="img-overlay p-btn--3">
+            <img src="images/portfolio-images/7.jpg" alt="my works" />
+            <div class="overlay-link">
+              <a href="projectTwo.html" class="common-heading" target="_blank"
+                >Project 2</a
+              >
+            </div>
+            <!--/overlay-txt-->
+          </div>
+          <!--/img-overlay-->
+          <div class="img-overlay p-btn--1">
+            <img src="images/portfolio-images/3.jpg" alt="my works" />
+            <div class="overlay-link">
+              <a href="projectThree.html" class="common-heading" target="_blank"
+                >Project 3</a
+              >
+            </div>
+            <!--/overlay-txt-->
+          </div>
+          <!--/img-overlay-->
+        </div>
+        <!--/grid-three-col-->
+      </section>
+      <!--/portfolio-section-->
+      <!--counter section-->
 
+      <section id="contact-section">
+          <h2 class="common-heading">Contact Me</h2>
+        <div class="form-container">
+          <form method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2023 Your Name. All rights reserved. | Designed by Showman</p>
+      </footer>
+    </div>
+    <!--/container-->
 
-        </div><!--/grid-three-col-->
-
-    </section><!--/portfolio-section-->
-    <!--counter section-->
-    <section class="section section-counter">
-            <div class="container grid grid-four-col">
-                <div>
-                    <h2 class="counter-numbers">2000+</h2>
-                    <p>project completed</p>
-                </div>
-                <div>
-                    <h2 class="counter-numbers">6000+</h2>
-                    <p>Happy clients</p>
-                </div>
-                <div>
-                    <h2 class="counter-numbers">5000+</h2>
-                    <p>cups of coffee</p>
-                </div>
-                <div>
-                    <h2 class="counter-numbers">3000+</h2>
-                    <p>Real professional</p>
-                </div>
-
-            </div><!--/container-->
-    </section>
-    <!-- service section -->
-    <section class="section service-section">
-        <div class="container">
-            <h2 class="common-heading">Services offers</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, accusamus.</p>
-        </div><!--/container-->
-        <!-- service cards -->
-        <div class="container grid grid-three-col">
-            <div class="service-box">
-                <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-            <div class="service-box">
-                <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-            <div class="service-box">
-                <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
-                <h3>photography</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-            <div class="service-box">
-                <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
-                <h3>mobile apps</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-            <div class="service-box">
-                <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
-                <h3>apps interface</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-            <div class="service-box">
-                <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
-                <h3>graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
-                 aliquam assumenda ratione atque mollitia dolorem sed quae itaque voluptates!</p>
-            </div><!--/service-box-->
-
-
-        </div><!--/grid-three-col-->
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function download(file) {
+        var link = document.getElementById("resume");
+        link.setAttribute("download", file);
+        link.click();
+      }
+    </script>
+  </body>
 </html>
