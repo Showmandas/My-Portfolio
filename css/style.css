@@ -241,7 +241,9 @@ li{
     text-align: justify;
 
 }
-
+.bio-data{
+    margin-top: 6rem;
+}
 /* style bio-data section */
 .biodata-img{
     display: flex;
@@ -336,6 +338,11 @@ li{
 
 .bio-progress-5 span{
     left: 81%;
+}
+
+
+.project-text{
+    font-size: 1.5rem
 }
 
 /* create carets */
@@ -549,7 +556,7 @@ cursor: pointer;
   }
 
   .form-group input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: var(--gradient);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -561,6 +568,7 @@ cursor: pointer;
   .form-group input[type="submit"]:hover {
     background-color: #45a049;
   }
+
 
   /* Footer styles */
   footer {
@@ -578,3 +586,99 @@ cursor: pointer;
     color: #fff;
     text-decoration: none;
   }
+
+
+
+  /* responsive  */
+
+  @media only screen and (max-width:576px) {
+    
+      .container{
+        width: 100%;
+        padding: 0;
+      }
+      .header{
+        flex-direction: column;
+      }
+      .bio-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-list{
+        /* flex-direction: column; */
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .navbar-link{
+        
+        font-size: 10px !important;
+      }
+      
+      .grid{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      .skill-section{
+        padding: 2rem;
+        width: 100%;
+      }
+      .bio-progress-bar{
+        width: 70%;
+      }
+      .bio-stats{
+        width: 100%;
+      }
+
+
+      .projectImg{
+        width: 50%;
+      }
+      .portfolio-imgs{
+        width: 70%;
+      }
+
+      .biodata-img{
+        flex-direction: column;
+      }
+      .hero-section{
+        width: 100%;
+        padding: 2rem;
+      }
+      #contact-section{
+        padding: 2rem;
+      }
+      .bio-data{
+        width: 100%;
+      }
+      .project-section{
+        width: 50%;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      /* .hero-img{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      } */
+      .img-hero{
+        /* max-width: 100%; */
+        padding: 0;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group textarea {
+        width: 70%;
+      }
+    
+      .form-group textarea {
+        height: 100px;
+      }
+      footer p{
+        font-size: 1rem;
+      }
+      .section{
+        padding: 0;
+      }
+      
+}
